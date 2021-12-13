@@ -1,0 +1,22 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[12pt,preview,border={-3cm 0cm}]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\paren}{\lparen}{\rparen}
+\DeclarePairedDelimiter{\bracket}{\lbrack}{\rbrack}
+\DeclarePairedDelimiter{\set}{\lbrace}{\rbrace}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\seq}{\langle}{\rangle}
+
+\begin{document}
+
+\begin{align}{}
+\frac{p}{1-p} &= b^{\beta_{0}} \cdot b^{\beta_{1}x_{1}} \cdots  b^{\beta_{i}\paren{x_{i}+1}} \cdots b^{\beta_{n}x_{n}} \\
+&= b^{\beta_{0}} \cdot b^{\beta_{1}x_{1}} \cdots  \underline{b^{\beta_{i}}}b^{x_{i}} \cdots b^{\beta_{n}x_{n}} \\
+\end{align}
+
+\end{document}
